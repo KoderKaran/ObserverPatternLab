@@ -3,7 +3,8 @@ import Behaviors.FunBehavior;
 
 public class FunPacifist implements FunBehavior{
 	@Override
-	public void haveFun() {
+	public boolean haveFun() {
 		//Does a walk and complements everyone he passes
+		return false;
 	}
 }

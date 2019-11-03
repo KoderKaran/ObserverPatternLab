@@ -3,7 +3,8 @@ import Behaviors.ItemBehavior;
 
 public class ItemTryhard implements ItemBehavior{
 	@Override
-	public void getItem() {
+	public boolean getItem() {
 		//will get most valuable item he can afford
+		return false;
 	}
 }

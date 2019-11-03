@@ -12,6 +12,12 @@ public class World implements Observer{
 		players = new ArrayList<Player>();
 	}
 
+	public void action(){
+		for(Player p: players){
+			p.randomAction();
+		}
+	}
+
 	@Override
 	public void update(ArrayList<Player> newPlayers) {
 		players = newPlayers;

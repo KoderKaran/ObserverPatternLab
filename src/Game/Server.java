@@ -1,4 +1,5 @@
 package Game;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Server implements Subject{
@@ -9,8 +10,8 @@ public class Server implements Subject{
 
 	private Server() {
 		players = new ArrayList<Player>();
-		factory = new PersonFactory();
 		observers = new ArrayList<Observer>();
+		factory = new PersonFactory();
 	}
 	
 	public static Server getInstance() {
@@ -24,6 +25,11 @@ public class Server implements Subject{
 		for(int i=0; i<popSize; i++) {
 			players.add(factory.newPerson());
 		}
+		this.notifyObserver();
+	}
+
+	public ArrayList<Player> getPlayers(){
+		return players;
 	}
 
 	@Override

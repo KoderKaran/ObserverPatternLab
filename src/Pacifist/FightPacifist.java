@@ -3,7 +3,9 @@ import Behaviors.FightBehavior;
 
 public class FightPacifist implements FightBehavior{
 	@Override
-	public void fight() {
+	public boolean fight() {
 		//Does not fight anyone
+
+		return false;
 	}
 }

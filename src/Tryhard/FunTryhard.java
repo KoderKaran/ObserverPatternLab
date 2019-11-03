@@ -3,7 +3,8 @@ import Behaviors.FunBehavior;
 
 public class FunTryhard implements FunBehavior{
 	@Override
-	public void haveFun() {
+	public boolean haveFun() {
 		//will challenge others to fights
+		return false;
 	}
 }
