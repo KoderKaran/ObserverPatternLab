@@ -4,7 +4,7 @@ import Behaviors.ItemBehavior;
 public class ItemTryhard implements ItemBehavior{
 	@Override
 	public boolean getItem() {
-		//will get most valuable item he can afford
+		//System.out.println("Player buys the most expensive item in the shop.");
 		return false;
 	}
 }

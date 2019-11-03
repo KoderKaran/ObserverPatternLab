@@ -4,8 +4,7 @@ import Behaviors.ItemBehavior;
 public class ItemSadist implements ItemBehavior{
 	@Override
 	public boolean getItem() {
-		//makes price of all items in shop 99999999 gold
-		//more people in the shop = more chance of report
+		//System.out.println("Player resets items prices in all shops to 999999 gold.");
 		return true;
 	}
 }

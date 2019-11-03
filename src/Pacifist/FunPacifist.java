@@ -4,7 +4,7 @@ import Behaviors.FunBehavior;
 public class FunPacifist implements FunBehavior{
 	@Override
 	public boolean haveFun() {
-		//Does a walk and complements everyone he passes
+		//System.out.println("Player goes to everyone they can and complements them.");
 		return false;
 	}
 }

@@ -4,7 +4,7 @@ import Behaviors.ItemBehavior;
 public class ItemPacifist implements ItemBehavior{
 	@Override
 	public boolean getItem() {
-		//buys items at listed price and sometimes will buy something for someone else in shop
+		//System.out.println("Player buys an item for the listed price.");
 		return false;
 	}
 }

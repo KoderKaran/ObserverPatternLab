@@ -24,8 +24,6 @@ public class Developer implements Observer{
 		for(Player p: players){
 			if(p.getBehaviorScore() > banCutOff){
 				afterBan.add(p);
-			}else{
-				System.out.println("A player has been banned!");
 			}
 		}
 		return afterBan;

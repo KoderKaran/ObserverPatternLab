@@ -4,7 +4,7 @@ import Behaviors.MoneyBehavior;
 public class MoneyThief implements MoneyBehavior{
 	@Override
 	public boolean getMoney() {
-		//sells stuff he stole from others. More people in world + more stuff sold = higher report chance
+		//System.out.println("Player sells stuff he stole from others.");
 		return true;
 	}
 }

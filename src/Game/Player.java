@@ -28,8 +28,8 @@ public class Player implements Observer{
 	public void reportHandler(){
 		for(int i=0; i < playerCount; i++){
 			double reportCheck = rand.nextDouble();
-			if(reportCheck < .25){
-				this.behaviorScore -= 125;
+			if(reportCheck < .15){
+				this.behaviorScore -= 500;
 			}
 		}
 	}
@@ -37,8 +37,8 @@ public class Player implements Observer{
 	public void commendHandler(){
 		for(int i=0; i < playerCount; i++){
 			double commendCheck = rand.nextDouble();
-			if(commendCheck < .15){
-				this.behaviorScore += 50;
+			if(commendCheck < .05){
+				this.behaviorScore += 500;
 			}
 		}
 		if(this.behaviorScore > 10000){

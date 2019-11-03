@@ -22,8 +22,10 @@ public class PersonFactory {
 			new MoneyPacifist(), new MoneySadist(), new MoneyThief(), new MoneyTryhard()));
 	
 	private Random rand;
+	private Subject server;
 	
-	public PersonFactory() {
+	public PersonFactory(Subject newServer) {
+		server = newServer;
 		rand = new Random();
 	}
 	
@@ -38,7 +40,7 @@ public class PersonFactory {
 		ItemBehavior item = itemBehaviors.get(itemRand);
 		MoneyBehavior money = moneyBehaviors.get(moneyRand);
 		
-		return new Player(fight, fun, item, money);
+		return new Player(fight, fun, item, money, server);
 		
 	}
 	

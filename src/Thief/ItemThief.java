@@ -4,7 +4,7 @@ import Behaviors.ItemBehavior;
 public class ItemThief implements ItemBehavior{
 	@Override
 	public boolean getItem() {
-		//have thief steal items from the stores. More people in world = more chance of report
+		//System.out.println("Player steals items from store illegally.");
 		return true;
 	}
 }

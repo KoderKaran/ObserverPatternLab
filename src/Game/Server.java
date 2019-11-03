@@ -11,7 +11,7 @@ public class Server implements Subject{
 	private Server() {
 		players = new ArrayList<Player>();
 		observers = new ArrayList<Observer>();
-		factory = new PersonFactory();
+		factory = new PersonFactory(this);
 	}
 	
 	public static Server getInstance() {
@@ -30,6 +30,11 @@ public class Server implements Subject{
 
 	public ArrayList<Player> getPlayers(){
 		return players;
+	}
+
+	public void setPlayers(ArrayList<Player> newPlayers){
+		players = newPlayers;
+		this.notifyObserver();
 	}
 
 	@Override
